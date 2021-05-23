@@ -7,6 +7,7 @@ FiveM Cocaine Job
   * [mythic_progbar](https://github.com/ONyambura/mythic_progbar)
   * [Kokain Lab [MLO]](https://dosya.co/p4wc0wadv26z/kokain-lab.rar.html)
   
+  Prewiev: https://www.youtube.com/watch?v=irttYr7pAuo
   
   
 Not: Compatible with ExtendedMode.
