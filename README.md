@@ -1,5 +1,5 @@
 # kibra-kokain
-FiveM Kokain Mesleği
+FiveM Cocaine Job
 
 ## Requirements
 * Dependencies For Full Functionality
