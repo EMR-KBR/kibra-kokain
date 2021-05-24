@@ -30,10 +30,10 @@ AddEventHandler('kibra-kokain:kokainAyristir', function ()
     oyuncu.addInventoryItem('ayristirilmis_kokain', 1)
     TriggerClientEvent('mythic_notify:client:SendAlert', source, { type = 'success', text = '1 Tane Kokain ayrıştırdınız.', length = 2500})
     else 
-        TriggerClientEvent('mythic_notify:client:SendAlert', source, { type = 'error', text = 'Envanterinizde Kokain Yok!', length = 2500})
+        TriggerClientEvent('mythic_notify:client:SendAlert', source, { type = 'error', text = 'Envanteriniz dolu!', length = 2500}) 
     end
     else
-        TriggerClientEvent('mythic_notify:client:SendAlert', source, { type = 'error', text = 'Envanteriniz dolu!', length = 2500}) 
+        TriggerClientEvent('mythic_notify:client:SendAlert', source, { type = 'error', text = 'Envanterinizde Kokain Yok!', length = 2500})
     end
 end)
 
@@ -47,10 +47,10 @@ AddEventHandler('kibra-kokain:kokainKurut', function ()
     oyuncu.addInventoryItem('kurutulmus_kokain', 1)
     TriggerClientEvent('mythic_notify:client:SendAlert', source, { type = 'success', text = '1 Tane Kokain kuruttunuz.', length = 2500})
    else 
-    TriggerClientEvent('mythic_notify:client:SendAlert', source, { type = 'error', text = 'Envanterinizde Ayrıştırılmış Kokain Yok!', length = 2500})
+    TriggerClientEvent('mythic_notify:client:SendAlert', source, { type = 'error', text = 'Envanteriniz dolu!', length = 2500}) 
    end
    else
-    TriggerClientEvent('mythic_notify:client:SendAlert', source, { type = 'error', text = 'Envanteriniz dolu!', length = 2500}) 
+    TriggerClientEvent('mythic_notify:client:SendAlert', source, { type = 'error', text = 'Envanterinizde ayrıştırılmış kokain yok!', length = 2500}) 
    end
 end)
 
@@ -64,11 +64,11 @@ AddEventHandler('kibra-kokain:kokainPaketle', function ()
         oyuncu.addInventoryItem('paketlenmis_kokain', 1)
         TriggerClientEvent('mythic_notify:client:SendAlert', source, { type = 'success', text = '1 Tane Kokain Paketlediniz', length = 2500})
     else 
-        TriggerClientEvent('mythic_notify:client:SendAlert', source, { type = 'error', text = 'Envanterinizde Kurutulmuş Kokain Yok!', length = 2500})
+        TriggerClientEvent('mythic_notify:client:SendAlert', source, { type = 'error', text = 'Envanteriniz dolu!', length = 2500})
     end
 else
-    TriggerClientEvent('mythic_notify:client:SendAlert', source, { type = 'error', text = 'Envanteriniz dolu!', length = 2500}) 
-   end
+    TriggerClientEvent('mythic_notify:client:SendAlert', source, { type = 'error', text = 'Envanterinizde Kurutulmuş Kokain Yok!', length = 2500})
+end
 end)
 
 RegisterServerEvent('kibra-kokain:kokainSat')
