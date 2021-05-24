@@ -205,25 +205,21 @@ Citizen.CreateThread(function()
     end
 end)
 
-
 Citizen.CreateThread(function()
-    RequestModel(GetHashKey("a_m_y_business_03"))
-	
-    while not HasModelLoaded(GetHashKey("a_m_y_business_03")) do
+    RequestModel(GetHashKey("a_m_y_bevhills_01"))
+    while not HasModelLoaded(GetHashKey("a_m_y_bevhills_01")) do
         Wait(1)
     end
-	
-	if Config.Satici then
-		for _, item in pairs(Config.Satici) do
-			local npc = CreatePed(4, 0xA1435105, Config.Satici.x, Config.Satici.y, Config.Satici.z, 75.3, false, true)
-			
-			SetEntityHeading(npc, item.heading)
-			FreezeEntityPosition(npc, true)
-			SetEntityInvincible(npc, true)
-			SetBlockingOfNonTemporaryEvents(npc, true)
-		end
-	end
+    npc = CreatePed(1, GetHashKey("a_m_y_bevhills_01"), Config.Satici.x, Config.Satici.y, Config.Satici.z, Config.heading, false, true)
+    SetPedCombatAttributes(npc, 46, true)               
+    SetPedFleeAttributes(npc, 0, 0)               
+    SetBlockingOfNonTemporaryEvents(npc, true)
+    SetEntityAsMissionEntity(npc, true, true)
+    SetEntityInvincible(npc, true)
+    FreezeEntityPosition(npc, true)
 end)
+
+
 
 Citizen.CreateThread(function()
     while true do
