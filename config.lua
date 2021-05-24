@@ -9,6 +9,7 @@ Config.KokainPaketleme = {x = 1116.89, y = -1239.5, z = 16.4185}
 
 --Satıcı
 Config.Satici = {x = 751.791, y = 6458.68, z =  30.5270}
+Config.heading = 64.28
 
 Config.Para = 30000 -- 5 Tanesi için
 
